@@ -11,9 +11,35 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hello🥳 {message.from_user.first_name}!
-I am Softfreakz Music Player Bot, Created by my master Softfreakz.
+I am Softfreakz Music Player Bot, Created by my master Softfreakz
 
-For any Issue, Error report or Support contact my master Softfreakz, well if you know how to contact him 😉
+For any issue support or error report contact my Master Softfreakz!
+ </b>""",
+      
+       
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Command", url="www.softfreakz.com",
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "👥 Group", url="www.softfreakz.com"
+                    ),
+                    InlineKeyboardButton(
+                        "💾 Source code", url="www.softfreakz.com"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "Join ChatGroup", url="www.softfreakz.com"
+                    )
+                ]
+            ]
+        )
+    )
 
 @Client.on_message(
     filters.command("start")
