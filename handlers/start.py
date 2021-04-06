@@ -15,31 +15,6 @@ I am Softfreakz Music Player Bot, Created by my master Softfreakz
 
 For any issue support or error report contact my Master Softfreakz!
  </b>""",
-      
-       
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Command", url="www.softfreakz.com",
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "👥 Group", url="www.softfreakz.com"
-                    ),
-                    InlineKeyboardButton(
-                        "💾 Source code", url="www.softfreakz.com"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "Join ChatGroup", url="www.softfreakz.com"
-                    )
-                ]
-            ]
-        )
-    )
 
 @Client.on_message(
     filters.command("start")
