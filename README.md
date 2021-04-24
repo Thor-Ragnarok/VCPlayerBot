@@ -2,7 +2,7 @@
 
 # How To Host
 The easiest way to deploy this Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/sangramghangale/VCPlayerBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/bluv-pr/VCPlayerBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 Get STRING_NAME from here:
 
@@ -34,7 +34,7 @@ Get STRING_NAME from here:
 - `/stop` to stop the streaming of song 
 - `/pause` to pause the stream 
 - `/resume` to resume the playback. 
-- Inline search is also supported.
+- use /start command in Group For Youtube Inline search supported.
 
 ## Requirements
 
