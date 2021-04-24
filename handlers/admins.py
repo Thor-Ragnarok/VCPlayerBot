@@ -16,7 +16,7 @@ from helpers.wrappers import errors, admins_only
 @admins_only
 async def pause(client: Client, message: Message):
     tgcalls.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("✯Softfreakz Music Bot✯=⏸ Paused.")
+    await message.reply_text("✯TN57 Music Bot✯=⏸ Paused.")
 
 
 @Client.on_message(
@@ -28,7 +28,7 @@ async def pause(client: Client, message: Message):
 @admins_only
 async def resume(client: Client, message: Message):
     tgcalls.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("✯Softfreakz Music Bot✯=▶️ Resumed.")
+    await message.reply_text("✯TN57 Music Bot✯=▶️ Resumed.")
 
 
 @Client.on_message(
@@ -45,7 +45,7 @@ async def stop(client: Client, message: Message):
         pass
 
     tgcalls.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("✯Softfreakz Music Bot✯=⏹ Stopped streaming.")
+    await message.reply_text("✯TN57 Music Bot✯=⏹ Stopped streaming.")
 
 
 @Client.on_message(
@@ -59,7 +59,7 @@ async def skip(client: Client, message: Message):
     chat_id = message.chat.id
 
     sira.task_done(chat_id)
-    await message.reply_text("Processing")
+    await message.reply_text("Processing...")
     if sira.is_empty(chat_id):
         tgcalls.pytgcalls.leave_group_call(chat_id)
         await message.reply_text("nothing in queue")
@@ -68,7 +68,7 @@ async def skip(client: Client, message: Message):
             chat_id, sira.get(chat_id)["file_path"]
         )
 
-        await message.reply_text("✯Softfreakz Music Bot✯=⏩ Skipped the current song.")
+        await message.reply_text("✯TN57 Music Bot✯=⏩ Skipped the current song.")
 
 
 @Client.on_message(
@@ -78,7 +78,7 @@ async def skip(client: Client, message: Message):
 @admins_only
 async def admincache(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    await message.reply_text("✯Softfreakz Music Bot✯=❇️ Admin cache refreshed!")
+    await message.reply_text("✯TN57 Music Bot✯=❇️ Admin cache refreshed!")
 
 @Client.on_message(
     filters.command("help")
