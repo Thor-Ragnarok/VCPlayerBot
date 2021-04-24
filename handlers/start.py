@@ -50,7 +50,7 @@ List of Supported Streaming Platforms Given Below:
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        "🤡 Do you want to search for a YouTube video?😺",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
