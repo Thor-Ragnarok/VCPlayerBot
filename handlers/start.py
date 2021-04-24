@@ -10,10 +10,10 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hello🥳 {message.from_user.first_name}!
-I am Softfreakz Music Player Bot, created by my master Softfreakz
+        f"""<b>Hello🤠 {message.from_user.first_name}!
+I am TN57 Music Player Bot, created by @TN57_BotZ
 
-For Help, Support or Error Report contact my Master Softfreakz!
+For Help, Support or Error Report contact my Master @BluVDs!
 
 List of Supported Streaming Platforms Given Below:
  </b>""",
@@ -23,7 +23,7 @@ List of Supported Streaming Platforms Given Below:
             [
                 [
                     InlineKeyboardButton(
-                        "Contact My Master", url="t.me/Softfreakz",
+                        "🤓Contact My Dev🤓", url="t.me/Bluvds",
                     )
                 ],
                 [
